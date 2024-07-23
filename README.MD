@@ -1,10 +1,9 @@
-# Sales and Store Management System
+# 3azmy  
+Sales and Store Management System based on pyonedark by wonderson
 
 ## Overview
-This project is a comprehensive system designed to manage sales and store operations efficiently. It includes features for inventory management, sales tracking, customer management, and reporting.
-
+This project is a comprehensive system designed to manage sales and store operations efficiently. It includes features for inventory management, sales tracking, customer management, and reporting, all built using PyQt for the GUI and Python for the backend, with MySQL as the database.
 ![alt text](https://github.com/medhatjachour/3azmy/blob/main/sample/6.png?raw=true)
-![alt text](https://github.com/medhatjachour/black_horse/blob/main/sample/img2.png?raw=true)
 
 ## Features
 - **Inventory Management**: Track stock levels, manage product details, and handle restocking.
@@ -17,32 +16,35 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/sales-store-management.git
-    cd sales-store-management
+    git clone https://github.com/medhatjachour/3azmy.git
+    cd 3azmy
     ```
 
-2. **Install dependencies**:
+2. **Create a virtual environment**:
     ```bash
-    npm install
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. **Set up the database**:
-    - Ensure you have a running instance of MongoDB.
-    - Create a `.env` file in the root directory and add your MongoDB connection string:
+3. **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Set up the database**:
+    - Ensure you have a running instance of MySQL.
+    - Create a `.env` file in the root directory and add your MySQL connection details:
       ```env
-      MONGODB_URI=mongodb://localhost:27017/sales-store
+      DATABASE_URL=mysql+pymysql://username:password@localhost/sales_store
       ```
 
-4. **Run the application**:
+5. **Run the application**:
     ```bash
-    npm start
+    python main.py
     ```
 
-5. **Access the application**:
-    Open your browser and navigate to `http://localhost:3000`.
-
 ## Usage
-- **Inventory Management**: Navigate to the Inventory section to add, update, or delete products.
+- **Inventory Management**: Use the Inventory section to add, update, or delete products.
 - **Sales Tracking**: Use the Sales section to record new sales and view past transactions.
 - **Customer Management**: Manage customer information in the Customers section.
 - **Reporting**: Generate and view reports in the Reports section.
@@ -61,7 +63,7 @@ We welcome contributions! Please follow these steps to contribute:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For any questions or suggestions, please contact us at your-email@example.com.
+For any questions or suggestions, please contact us at medhatjachour@gmail.com.
 
 ---
 
