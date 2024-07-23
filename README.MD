@@ -10,6 +10,7 @@ This project is a comprehensive system designed to manage sales and store operat
 - **Sales Tracking**: Record sales transactions, generate invoices, and monitor sales performance.
 - **Customer Management**: Maintain customer records, track purchase history, and manage customer interactions.
 - **Reporting**: Generate detailed reports on sales, inventory, and customer data.
+- **Data Backup**: Backup data to google drive .
 
 ## Installation
 To get started with the project, follow these steps:
